@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(315deg, grey 10%,   #eabfff 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 200% 200%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+.art{
+  font-family: 'Cherish', cursive;
+  font-weight: normal;
+  font-size: 9vh;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 35px;
+  background-color: transparent;
+  color: whitesmoke;
+  animation-name: m;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes m {
+  0%{opacity: 0;}
+  100%{opacity: 1;} 
+}
+ 
+.menuIcon{
+    position:fixed;
+    background-image: url('/storage/emulated/0/MAREK/Icon/menuIcon4.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: transparent;
+    width:8%;
+    height:4%;
+    left:85%;
+    top:4.3%;
+    margin:0;
+    padding:0;
+    z-index: 100;
+    animation-name: icon;
+    animation-duration: 2s;
+    }
+
+@keyframes icon {
+  0%{width:0%;height: 0%;}  
+  50%{width:10%;height:6%;}
+  100%{width:8%;height: 4%;}
+}
+
+@media(min-width:767px){
+    .menuIcon{
+     width: 6%;
+     left:90%;
+     } 
+     @keyframes icon {
+     0%{width:0%;height: 0%;}  
+     50%{width:9%;height:6%;}
+     100%{width:6%;height: 4%;}
+ }  
+}
+
+@media(min-width:1023px){
+    .menuIcon{
+     width: 4%;
+     left:93%;
+     }   
+     
+     @keyframes icon {
+  0%{width:0%;height: 0%;}  
+  50%{width:6%;height:7%;}
+  100%{width:4%;height: 4%;}
+}
+}
+
+@media(min-width:2559px){
+    .menuIcon{
+     width: 1.5%;
+     left:97%;
+     } 
+     
+     @keyframes icon {
+  0%{width:0%;height: 0%;}  
+  50%{width:2%;height:7%;}
+  100%{width:1.5%;height: 4%;}
+}  
+}
+
+.menu{
+    position:fixed;
+    height:29%;
+    width:100%;
+    top:12%;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    animation-name: menu;
+    animation-duration: 1s;
+    z-index:100;
+    }
+    
+
+@keyframes menu{
+   0%{
+   top:12%;left:70%;width:0;opacity:0;
+   }
+   100%{
+ top:12%;left:0%;width:100%;opacity:1;
+ }
+}
+
+
+
+.haa{
+    display: flex; 
+    width: 100%;
+    text-decoration:none;
+    justify-content: flex-end;
+    vertical-align: middle;
+    line-height: 10vh;
+    font-size: 4vw;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5vw;
+    z-index:;
+    padding: 0;
+    margin:0;
+    animation: haa 2s;
+    }
+
+@keyframes haa {
+   from{font-size: 0vw;letter-spacing: 0vw;} 
+   
+   to{font-size: 4vw;letter-spacing: 5vw;}
+}
+
+@media(min-width: 435px){
+    .haa{
+        font-size: 4vw;
+        letter-spacing: 5vw;
+        }
+    
+    @keyframes haa {
+   0%{font-size: 0vw;letter-spacing: 0vw;} 
+   
+   to{font-size: 4vw;letter-spacing: 5vw;}
+ }
+}
+
+@media(min-width: 768px){
+    .haa{
+        font-size: 3vw;
+        letter-spacing: 4vw;
+        }
+    
+    @keyframes haa {
+   0%{font-size: 0vw;letter-spacing: 0vw;} 
+   
+   to{font-size: 3vw;letter-spacing: 4vw;}
+ }
+}
+
+
+@media(min-width: 1024px){
+    .haa{
+        font-size: 2vw;
+        letter-spacing: 3vw;
+        }
+    
+    @keyframes haa {
+   0%{font-size: 0vw;letter-spacing: 0vw;} 
+   
+   to{font-size: 2vw;letter-spacing: 3vw;}
+}
+}
+   
+@media(min-width: 2560px){
+    .haa{
+        font-size: 1vw;
+        letter-spacing: 2vw;
+        }
+    
+    @keyframes haa {
+   0%{font-size: 0vw;letter-spacing: 0vw;} 
+   
+   to{font-size: 1vw;letter-spacing: 2vw;}
+ }
+}
+
+
+details > .menuIcon{
+    list-style-type:none;
+   }
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 20px;
+  margin: 20px;
+  z-index: 1;
+  } 
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width:350px;
+    height:350px;
+    overflow-x: scroll;
+    overflow-y: hidden;  
+    margin: 0;
+    padding: 0; 
+    
+}
+
+.grid > img{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+
+.kucko{
+     display: inline-block;
+     width: 100%;
+     color:black;
+     margin:0;
+     padding:0;
+     font-size:2vw;
+     text-align:center;
+     letter-spacing:3px;
+     text-decoration: none;
+     }  
+
+@media(min-width:767px){
+    .kucko{
+     font-size: 1vw;
+     }   
+}
+
+@media(min-width:1024px){
+    .kucko{
+     font-size: 1vw;
+     }   
+}
+
+@media(min-width:1439px){
+    .kucko{
+     font-size: 1vw;
+     }   
+}
+
+@media(min-width:2559px){
+    .kucko{
+     font-size: 0.5vw;
+     }   
+}
+    
+    
+
